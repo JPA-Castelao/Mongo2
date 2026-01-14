@@ -12,6 +12,7 @@ public class OpenApiConfig {
     @Value("${app.version}")
     private String version;
 
+
     @Value("${spring.application.name:nome}")
     private String appName;
 

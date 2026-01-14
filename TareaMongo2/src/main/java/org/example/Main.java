@@ -1,12 +1,26 @@
+
+
 package org.example;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@org.springframework.boot.autoconfigure.SpringBootApplication
-@ComponentScan({"org.example"})
+@SpringBootApplication
 public class Main {
+
+    private final Secuencia secuencia;
+
+
+    public Main(Secuencia secuencia) {
+        this.secuencia = secuencia;
+    }
+    @PostConstruct
+    public void exameSolucion() {
+        secuencia.exameSolucion();
+        System.exit(200);
+    }
     public static void main(String[] args) {
-        SpringApplication.run(org.example.Main.class, args);
+        SpringApplication.run(Main.class, args);
     }
 }
