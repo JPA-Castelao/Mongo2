@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Zambia",
+    "organizacion": "Dictadura",
+    "partidos": ["UPND", "Patriotic Front"],
+    "id_presidente": "65b2f1a2c3d4e5f678901234"
+  },
+  {
+    "nome": "Brasil",
+    "organizacion": "República Federal",
+    "partidos": ["PT", "PL", "MDB"],
+    "id_presidente": "65b2f1a2c3d4e5f678901235"
+  }
+]

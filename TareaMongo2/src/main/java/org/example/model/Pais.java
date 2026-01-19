@@ -12,6 +12,13 @@ public class Pais {
     private String[] partidos;
     private String id_presidente;
 
+    public Pais(String nome, String organizacion, String[] partidos, String id_presidente) {
+        this.nome = nome;
+        this.organizacion = organizacion;
+        this.partidos = partidos;
+        this.id_presidente = id_presidente;
+    }
+
     public String getNome() {
         return nome;
     }

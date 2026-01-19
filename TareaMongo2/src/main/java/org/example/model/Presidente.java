@@ -10,7 +10,13 @@ public class Presidente {
     @Id
     private String nome;
     private String idade;
-    private String[] partido;
+    private String partido;
+
+    public Presidente(String nome, String idade, String partido) {
+        this.nome = nome;
+        this.idade = idade;
+        this.partido = partido;
+    }
 
     public String getNome() {
         return nome;
@@ -28,11 +34,11 @@ public class Presidente {
         this.idade = idade;
     }
 
-    public String[] getPartido() {
+    public String getPartido() {
         return partido;
     }
 
-    public void setPartido(String[] partido) {
+    public void setPartido(String partido) {
         this.partido = partido;
     }
 }

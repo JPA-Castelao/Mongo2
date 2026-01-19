@@ -1,9 +1,7 @@
 package org.example;
 
-import org.example.model.Exercicio;
 import org.example.model.Pais;
-import org.example.model.Videoxogo;
-import org.example.service.ConexionService;
+import org.example.model.Presidente;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,12 +17,13 @@ public class Secuencia {
 
         // 1
         System.out.println("Execución Exercicio 1");
-      
+
+
         System.out.println("FIN Exercicio 1");
 
         // 2
         System.out.println("Execución Exercicio 2");
- 
+
         System.out.println("FIN Exercicio 2");
 
         // 3
@@ -34,22 +33,22 @@ public class Secuencia {
 
         // 4
         System.out.println("Execución Exercicio 4");
-        
+
         System.out.println("FIN Exercicio 4");
 
         // 5
         System.out.println("Execución Exercicio 5");
-       
+
         System.out.println("FIN Exercicio 5");
 
         // 6
         System.out.println("Execución Exercicio 6");
-       
+
         System.out.println("FIN Exercicio 6");
 
         // 7
         System.out.println("Execución Exercicio 7");
-        
+
         System.out.println("FIN Exercicio 7");
     }
 }
