@@ -1,16 +1,22 @@
 package org.example.model;
 
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "presidente")
 public class Presidente {
     @Id
+    private String Id;
     private String nome;
     private String idade;
     private String partido;
+
+
+    public Presidente() {
+    }
+
+    ;
 
     public Presidente(String nome, String idade, String partido) {
         this.nome = nome;

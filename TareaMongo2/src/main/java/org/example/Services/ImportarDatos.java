@@ -22,7 +22,7 @@ public class ImportarDatos {
     private PresidenteRepository presidenteRepo;
 
     @Autowired
-    private ObjectMapper om;
+    private ObjectMapper om = new ObjectMapper();
 
     public void importarPaises(String ruta) {
         //Leemos el archivo y lo convertimos a una lista de paises usando el ObjectMapper de Jackson
@@ -44,8 +44,6 @@ public class ImportarDatos {
 
     public void importarPresidentes(String ruta) {
         //leemos el archivo con el ObjectWrapper de jackson y lo convertimos en una lista de ese tipo
-
-
         try {
             //TypeReference convierte la lista en una lista de Presidentes
             List<Presidente> listaPresidentes = om.readValue(
@@ -54,7 +52,7 @@ public class ImportarDatos {
                     });
 
             presidenteRepo.saveAll(listaPresidentes);
-            System.out.println("Importacion de paises  exitosa");
+            System.out.println("Importacion de presidentes  exitosa");
 
 
         } catch (IOException e) {

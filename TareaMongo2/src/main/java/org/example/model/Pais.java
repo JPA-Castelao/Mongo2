@@ -4,9 +4,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "pokemon")
+@Document(collection = "pais")
 public class Pais {
     @Id
+    private String Id;
     private String nome;
     private String organizacion;
     private String[] partidos;

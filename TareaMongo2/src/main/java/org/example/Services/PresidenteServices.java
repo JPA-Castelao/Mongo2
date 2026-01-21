@@ -26,7 +26,7 @@ public class PresidenteServices {
         return prRepo.findById(id).orElse(null);
     }
 
-    public List<Presidente> listarPresidente() {
+    public List<Presidente> listarPresidentes() {
         return prRepo.findAll();
     }
 
