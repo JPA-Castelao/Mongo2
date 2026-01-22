@@ -7,17 +7,31 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "pais")
 public class Pais {
     @Id
-    private String Id;
+    private String id;
     private String nome;
     private String organizacion;
     private String[] partidos;
     private String id_presidente;
 
-    public Pais(String nome, String organizacion, String[] partidos, String id_presidente) {
-        this.nome = nome;
-        this.organizacion = organizacion;
-        this.partidos = partidos;
-        this.id_presidente = id_presidente;
+//    public Pais(String nome, String organizacion, String[] partidos, String id_presidente) {
+//        this.nome = nome;
+//        this.organizacion = organizacion;
+//        this.partidos = partidos;
+//        this.id_presidente = id_presidente;
+//    }
+
+
+    public Pais() {
+
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        id = id;
     }
 
     public String getNome() {
@@ -37,6 +51,7 @@ public class Pais {
     }
 
     public String[] getPartidos() {
+
         return partidos;
     }
 

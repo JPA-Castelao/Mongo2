@@ -2,6 +2,7 @@ package org.example.Services;
 
 import org.example.Repository.PaisRepository;
 import org.example.model.Pais;
+import org.example.model.Presidente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,9 +33,7 @@ public class PaisServices {
     //Update
     public Pais actualizarPais(String id, Pais paisMod) {
 
-        Pais p = pRepo.findById(id)
-                .orElseThrow(() -> new RuntimeException("Entrada no encontrada"));
-
+        Pais p = pRepo.findById(id).orElseThrow(() -> new RuntimeException("Entrada no encontrada"));
         p.setNome(paisMod.getNome());
         p.setOrganizacion(paisMod.getOrganizacion());
         p.setPartidos(paisMod.getPartidos());
@@ -42,11 +41,24 @@ public class PaisServices {
 
         return p;
     }
-    //Delete
 
+    //Delete
     public void borrarPais(String id) {
         pRepo.deleteById(id);
     }
 
+    //Mostrar
+    public void mostrarPais(Pais ps) {
+
+        System.out.println("Nome: " + ps.getNome());
+        System.out.println("Organizacion : " + ps.getOrganizacion());
+        System.out.printf("Partidos : ");
+        for (String s : ps.getPartidos()) {
+            System.out.printf(" %s ", s);
+        }
+        System.out.println();
+
+        System.out.println("ID Presidente : " + ps.getId_presidente());
+    }
 
 }

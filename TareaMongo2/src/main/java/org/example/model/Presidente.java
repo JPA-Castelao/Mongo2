@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "presidente")
 public class Presidente {
     @Id
-    private String Id;
+    private String id;
     private String nome;
     private String idade;
     private String partido;
@@ -16,13 +16,20 @@ public class Presidente {
     public Presidente() {
     }
 
-    ;
-
     public Presidente(String nome, String idade, String partido) {
         this.nome = nome;
         this.idade = idade;
         this.partido = partido;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        id = id;
+    }
+
 
     public String getNome() {
         return nome;

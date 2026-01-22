@@ -46,4 +46,12 @@ public class PresidenteServices {
     public void borrarPresidente(String id) {
         prRepo.deleteById(id);
     }
+
+    //Mostrar
+    public void mostrarPresidente(Presidente pr) {
+
+        System.out.println("Nome: " + pr.getNome());
+        System.out.println("Idade : " + pr.getIdade());
+        System.out.println("Partido : " + pr.getPartido());
+    }
 }

@@ -1,19 +1,12 @@
-[
-  {
-    "nome": "Zambia",
-    "organizacion": "Dictadura",
-    "partidos": [
-      "UPND",
-      "Patriotic Front"
-    ],
-    "id_presidente": "6970d3fee7dcfb68afaef21c"
-  },
-  {
-    "nome": "California",
-    "organizacion": "Dictadura",
-    "partidos": [
-      "Partido Implante Capilar"
-    ],
-    "id_presidente": ""
-  }
-]
+{
+  "id": "1",
+  "nome": "Zambia",
+  "organizacion": "Dictadura",
+  "partidos": [
+    "UPND",
+    "Patriotic Front"
+  ],
+  "id_presidente": "1"
+}
+
+

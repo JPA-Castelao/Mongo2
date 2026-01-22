@@ -1,15 +1,18 @@
 [
   {
+    "id": "1",
     "nome": "Hakainde Hichilema",
     "idade": "61",
     "partido": "UPND"
   },
   {
+    "id": "2",
     "nome": "Lula da Silva",
     "idade": "78",
     "partido": "Partido de los Trabajadores"
   },
   {
+    "id": "3",
     "nome": "Steven Seagal",
     "idade": "68",
     "partido": "Partido Implante Capilar"
